@@ -1,0 +1,303 @@
+W 60 ms
+#
+# down 1
+#
+K 72
+W 16 ms
+K f0
+K 72
+W 16 ms
+#
+# down 2
+#
+K 72
+W 16 ms
+K f0
+K 72
+W 16 ms
+#
+# down 3
+#
+K 72
+W 16 ms
+K f0
+K 72
+W 16 ms
+#
+# down 4
+#
+K 72
+W 16 ms
+K f0
+K 72
+W 16 ms
+#
+# down 5
+#
+K 72
+W 16 ms
+K f0
+K 72
+W 16 ms
+#
+# down 6
+#
+K 72
+W 16 ms
+K f0
+K 72
+W 16 ms
+#
+# down 7
+#
+K 72
+W 16 ms
+K f0
+K 72
+W 16 ms
+#
+# down 8
+#
+K 72
+W 16 ms
+K f0
+K 72
+W 16 ms
+#
+# enter
+#
+K 5a
+W 16 ms
+K f0
+K 5a
+W 16 ms
+#
+# tempo
+#
+W 200 ms
+#
+# l
+#
+K 4b
+W 16 ms
+K f0
+K 4b
+W 16 ms
+#
+# o
+#
+K 44
+W 16 ms
+K f0
+K 44
+W 16 ms
+#
+# a
+#
+K 15
+W 16 ms
+K f0
+K 15
+W 16 ms
+#
+# d
+#
+K 23
+W 16 ms
+K f0
+K 23
+W 16 ms
+#
+# enter
+#
+K 5a
+W 16 ms
+K f0
+K 5a
+W 16 ms
+#
+# tempo
+#
+W 200 ms
+#
+# r
+#
+K 2d
+W 16 ms
+K f0
+K 2d
+W 16 ms
+#
+# u
+#
+K 3c
+W 16 ms
+K f0
+K 3c
+W 16 ms
+#
+# n
+#
+K 31
+W 16 ms
+K f0
+K 31
+W 16 ms
+#
+# enter
+#
+K 5a
+W 16 ms
+K f0
+K 5a
+W 16 ms
+#
+# tempo
+#
+W 200 ms
+#
+# enter
+#
+K 5a
+W 16 ms
+K f0
+K 5a
+W 16 ms
+#
+# tempo
+#
+W 2000 ms
+#
+# enter 1
+#
+K 5a
+W 16 ms
+K f0
+K 5a
+W 16 ms
+#
+# tempo
+#
+W 200 ms
+#
+# enter 2
+#
+K 5a
+W 16 ms
+K f0
+K 5a
+W 16 ms
+#
+# tempo
+#
+W 200 ms
+#
+# enter 2
+#
+K 5a
+W 16 ms
+K f0
+K 5a
+W 16 ms
+#
+# tempo
+#
+W 200 ms
+#
+# enter 4
+#
+K 5a
+W 16 ms
+K f0
+K 5a
+W 16 ms
+#
+# tempo
+#
+W 2000 ms
+#
+#
+#
+#
+#
+#
+#
+#
+K 5a
+W 16 ms
+K f0
+K 5a
+W 50 ms
+K 5a
+W 16 ms
+K f0
+K 5a
+W 50 ms
+K 5a
+W 16 ms
+K f0
+K 5a
+W 50 ms
+K 5a
+W 16 ms
+K f0
+K 5a
+W 50 ms
+K 5a
+W 16 ms
+K f0
+K 5a
+W 50 ms
+K 5a
+W 16 ms
+K f0
+K 5a
+W 50 ms
+K 5a
+W 16 ms
+K f0
+K 5a
+W 50 ms
+#
+#
+#
+#
+#
+#
+#
+K 5a
+W 1000 ms
+K f0
+K 5a
+W 1000 ms
+K 5a
+W 1000 ms
+K f0
+K 5a
+W 1000 ms
+K 5a
+W 1000 ms
+K f0
+K 5a
+W 1000 ms
+K 5a
+W 1000 ms
+K f0
+K 5a
+W 1000 ms
+K 5a
+W 1000 ms
+K f0
+K 5a
+W 1000 ms
+K 5a
+W 1000 ms
+K f0
+K 5a
+W 1000 ms
+K 5a
+W 1000 ms
+K f0
+K 5a
+W 1000 ms
+E

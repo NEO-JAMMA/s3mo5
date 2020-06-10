@@ -1,0 +1,114 @@
+-- init
+D 1
+W 104 us
+--
+--
+-- 65 
+D 0 
+W 8.68 us
+D 1
+W 8.68 us
+D 0
+W 8.68 us
+D 1
+W 8.68 us
+D 0
+W 8.68 us
+D 0
+W 8.68 us
+D 1
+W 8.68 us
+D 1
+W 8.68 us
+D 0
+W 8.68 us
+D 1
+W 8.68 us
+-- ae 
+D 0 
+W 8.68 us
+D 0
+W 8.68 us
+D 1
+W 8.68 us
+D 1
+W 8.68 us
+D 1
+W 8.68 us
+D 0
+W 8.68 us
+D 1
+W 8.68 us
+D 0
+W 8.68 us
+D 1
+W 8.68 us
+D 1
+W 8.68 us
+W 2.30 us
+-- 12 
+D 0 
+W 8.68 us
+D 0
+W 8.68 us
+D 1
+W 8.68 us
+D 0
+W 8.68 us
+D 0
+W 8.68 us
+D 1
+W 8.68 us
+D 0
+W 8.68 us
+D 0
+W 8.68 us
+D 0
+W 8.68 us
+D 1
+W 8.68 us
+-- 12 again
+D 0 
+W 8.68 us
+D 0
+W 8.68 us
+D 1
+W 8.68 us
+D 0
+W 8.68 us
+D 0
+W 8.68 us
+D 1
+W 8.68 us
+D 0
+W 8.68 us
+D 0
+W 8.68 us
+D 0
+W 8.68 us
+D 1
+W 8.68 us
+-- 65 
+D 0 
+W 8.68 us
+D 1
+W 8.68 us
+D 0
+W 8.68 us
+D 1
+W 8.68 us
+D 0
+W 8.68 us
+D 0
+W 8.68 us
+D 1
+W 8.68 us
+D 1
+W 8.68 us
+D 0
+W 8.68 us
+D 1
+W 8.68 us
+--
+W 20 us
+E

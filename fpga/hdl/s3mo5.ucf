@@ -1,0 +1,378 @@
+######################################################################
+#
+# S3MO5 - place/route constraints
+#
+# Copyright (C) 2005 Olivier Ringot <oringot@gmail.com>
+# 
+# This file is part of the S3MO5 project
+#
+# S3MO5 is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+# 
+# S3MO5 is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# 
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street, Fifth Floor, 
+# Boston, MA  02110-1301, USA.
+# 
+######################################################################
+# $Revision: $
+# $Date: $
+# $Source: $
+# $Log: $
+######################################################################
+
+
+#
+# 50 MHz oscillator
+#
+NET "clk_osc" LOC = "T9";
+NET "clk_osc" IOSTANDARD = LVCMOS33;
+#
+# buttons and switches
+#
+NET "pbutton<3>" LOC = "L14";
+NET "pbutton<2>" LOC = "L13";
+NET "pbutton<1>" LOC = "M14";
+NET "pbutton<0>" LOC = "M13";
+NET "switch<7>" LOC = "K13";
+NET "switch<6>" LOC = "K14";
+NET "switch<5>" LOC = "J13";
+NET "switch<4>" LOC = "J14";
+NET "switch<3>" LOC = "H13";
+NET "switch<2>" LOC = "H14";
+NET "switch<1>" LOC = "G12";
+NET "switch<0>" LOC = "F12";
+NET "pbutton<3>" IOSTANDARD = LVCMOS33;
+NET "pbutton<2>" IOSTANDARD = LVCMOS33;
+NET "pbutton<1>" IOSTANDARD = LVCMOS33;
+NET "pbutton<0>" IOSTANDARD = LVCMOS33;
+NET "switch<7>" IOSTANDARD = LVCMOS33;
+NET "switch<6>" IOSTANDARD = LVCMOS33;
+NET "switch<5>" IOSTANDARD = LVCMOS33;
+NET "switch<4>" IOSTANDARD = LVCMOS33;
+NET "switch<3>" IOSTANDARD = LVCMOS33;
+NET "switch<2>" IOSTANDARD = LVCMOS33;
+NET "switch<1>" IOSTANDARD = LVCMOS33;
+NET "switch<0>" IOSTANDARD = LVCMOS33;
+#
+# 7 segments display
+#
+NET "anode_s7<3>" LOC = "E13";
+NET "anode_s7<2>" LOC = "F14";
+NET "anode_s7<1>" LOC = "G14";
+NET "anode_s7<0>" LOC = "D14";
+NET "s7<7>" LOC = "P16";
+NET "s7<6>" LOC = "N16";
+NET "s7<5>" LOC = "F13";
+NET "s7<4>" LOC = "R16";
+NET "s7<3>" LOC = "P15";
+NET "s7<2>" LOC = "N15";
+NET "s7<1>" LOC = "G13";
+NET "s7<0>" LOC = "E14";
+NET "anode_s7<3>" IOSTANDARD = LVCMOS33;
+NET "anode_s7<2>" IOSTANDARD = LVCMOS33;
+NET "anode_s7<1>" IOSTANDARD = LVCMOS33;
+NET "anode_s7<0>" IOSTANDARD = LVCMOS33;
+NET "s7<7>" IOSTANDARD = LVCMOS33;
+NET "s7<6>" IOSTANDARD = LVCMOS33;
+NET "s7<5>" IOSTANDARD = LVCMOS33;
+NET "s7<4>" IOSTANDARD = LVCMOS33;
+NET "s7<3>" IOSTANDARD = LVCMOS33;
+NET "s7<2>" IOSTANDARD = LVCMOS33;
+NET "s7<1>" IOSTANDARD = LVCMOS33;
+NET "s7<0>" IOSTANDARD = LVCMOS33;
+NET "anode_s7<3>" DRIVE = 12;
+NET "anode_s7<2>" DRIVE = 12;
+NET "anode_s7<1>" DRIVE = 12;
+NET "anode_s7<0>" DRIVE = 12;
+NET "s7<7>" DRIVE = 12;
+NET "s7<6>" DRIVE = 12;
+NET "s7<5>" DRIVE = 12;
+NET "s7<4>" DRIVE = 12;
+NET "s7<3>" DRIVE = 12;
+NET "s7<2>" DRIVE = 12;
+NET "s7<1>" DRIVE = 12;
+NET "s7<0>" DRIVE = 12;
+#
+# leds
+#
+NET "led<7>" LOC = "P11";
+NET "led<6>" LOC = "P12";
+NET "led<5>" LOC = "N12";
+NET "led<4>" LOC = "P13";
+NET "led<3>" LOC = "N14";
+NET "led<2>" LOC = "L12";
+NET "led<1>" LOC = "P14";
+NET "led<0>" LOC = "K12";
+NET "led<7>" IOSTANDARD = LVCMOS33;
+NET "led<6>" IOSTANDARD = LVCMOS33;
+NET "led<5>" IOSTANDARD = LVCMOS33;
+NET "led<4>" IOSTANDARD = LVCMOS33;
+NET "led<3>" IOSTANDARD = LVCMOS33;
+NET "led<2>" IOSTANDARD = LVCMOS33;
+NET "led<1>" IOSTANDARD = LVCMOS33;
+NET "led<0>" IOSTANDARD = LVCMOS33;
+NET "led<7>" DRIVE = 12;
+NET "led<6>" DRIVE = 12;
+NET "led<5>" DRIVE = 12;
+NET "led<4>" DRIVE = 12;
+NET "led<3>" DRIVE = 12;
+NET "led<2>" DRIVE = 12;
+NET "led<1>" DRIVE = 12;
+NET "led<0>" DRIVE = 12;
+#
+# rs232
+#
+NET "uart_tx" LOC = "R13";
+NET "uart_rx" LOC = "T13";
+NET "uart_tx" IOSTANDARD = LVCMOS33;
+NET "uart_rx" IOSTANDARD = LVCMOS33;
+NET "uart_tx" DRIVE = 8;
+#
+# sram
+#
+NET "sram_csn<0>" LOC = "P7";
+NET "sram_ben<1>" LOC = "P6";
+NET "sram_ben<0>" LOC = "T4";
+NET "sram_csn<1>" LOC = "N5";
+NET "sram_ben<3>" LOC = "P5";
+NET "sram_ben<2>" LOC = "R4";
+NET "sram_oen" LOC = "K4";
+NET "sram_wen" LOC = "G3";
+NET "sram_a<17>" LOC = "L3";
+NET "sram_a<16>" LOC = "K5";
+NET "sram_a<15>" LOC = "K3";
+NET "sram_a<14>" LOC = "J3";
+NET "sram_a<13>" LOC = "J4";
+NET "sram_a<12>" LOC = "H4";
+NET "sram_a<11>" LOC = "H3";
+NET "sram_a<10>" LOC = "G5";
+NET "sram_a<9>" LOC = "E4";
+NET "sram_a<8>" LOC = "E3";
+NET "sram_a<7>" LOC = "F4";
+NET "sram_a<6>" LOC = "F3";
+NET "sram_a<5>" LOC = "G4";
+NET "sram_a<4>" LOC = "L4";
+NET "sram_a<3>" LOC = "M3";
+NET "sram_a<2>" LOC = "M4";
+NET "sram_a<1>" LOC = "N3";
+NET "sram_a<0>" LOC = "L5";
+NET "sram_dq<31>" LOC = "N1";
+NET "sram_dq<30>" LOC = "M1";
+NET "sram_dq<29>" LOC = "K2";
+NET "sram_dq<28>" LOC = "C3";
+NET "sram_dq<27>" LOC = "F5";
+NET "sram_dq<26>" LOC = "G1";
+NET "sram_dq<25>" LOC = "E2";
+NET "sram_dq<24>" LOC = "D2";
+NET "sram_dq<23>" LOC = "D1";
+NET "sram_dq<22>" LOC = "E1";
+NET "sram_dq<21>" LOC = "G2";
+NET "sram_dq<20>" LOC = "J1";
+NET "sram_dq<19>" LOC = "K1";
+NET "sram_dq<18>" LOC = "M2";
+NET "sram_dq<17>" LOC = "N2";
+NET "sram_dq<16>" LOC = "P2";
+NET "sram_dq<15>" LOC = "R1";
+NET "sram_dq<14>" LOC = "P1";
+NET "sram_dq<13>" LOC = "L2";
+NET "sram_dq<12>" LOC = "J2";
+NET "sram_dq<11>" LOC = "H1";
+NET "sram_dq<10>" LOC = "F2";
+NET "sram_dq<9>" LOC = "P8";
+NET "sram_dq<8>" LOC = "D3";
+NET "sram_dq<7>" LOC = "B1";
+NET "sram_dq<6>" LOC = "C1";
+NET "sram_dq<5>" LOC = "C2";
+NET "sram_dq<4>" LOC = "R5";
+NET "sram_dq<3>" LOC = "T5";
+NET "sram_dq<2>" LOC = "R6";
+NET "sram_dq<1>" LOC = "T8";
+NET "sram_dq<0>" LOC = "N7";
+NET "sram_csn<0>" IOSTANDARD = LVCMOS33;
+NET "sram_csn<1>" IOSTANDARD = LVCMOS33;
+NET "sram_ben<1>" IOSTANDARD = LVCMOS33;
+NET "sram_ben<0>" IOSTANDARD = LVCMOS33;
+NET "sram_ben<3>" IOSTANDARD = LVCMOS33;
+NET "sram_ben<2>" IOSTANDARD = LVCMOS33;
+NET "sram_oen" IOSTANDARD = LVCMOS33;
+NET "sram_wen" IOSTANDARD = LVCMOS33;
+NET "sram_a<17>" IOSTANDARD = LVCMOS33;
+NET "sram_a<16>" IOSTANDARD = LVCMOS33;
+NET "sram_a<15>" IOSTANDARD = LVCMOS33;
+NET "sram_a<14>" IOSTANDARD = LVCMOS33;
+NET "sram_a<13>" IOSTANDARD = LVCMOS33;
+NET "sram_a<12>" IOSTANDARD = LVCMOS33;
+NET "sram_a<11>" IOSTANDARD = LVCMOS33;
+NET "sram_a<10>" IOSTANDARD = LVCMOS33;
+NET "sram_a<9>" IOSTANDARD = LVCMOS33;
+NET "sram_a<8>" IOSTANDARD = LVCMOS33;
+NET "sram_a<7>" IOSTANDARD = LVCMOS33;
+NET "sram_a<6>" IOSTANDARD = LVCMOS33;
+NET "sram_a<5>" IOSTANDARD = LVCMOS33;
+NET "sram_a<4>" IOSTANDARD = LVCMOS33;
+NET "sram_a<3>" IOSTANDARD = LVCMOS33;
+NET "sram_a<2>" IOSTANDARD = LVCMOS33;
+NET "sram_a<1>" IOSTANDARD = LVCMOS33;
+NET "sram_a<0>" IOSTANDARD = LVCMOS33;
+NET "sram_dq<31>" IOSTANDARD = LVCMOS33;
+NET "sram_dq<30>" IOSTANDARD = LVCMOS33;
+NET "sram_dq<29>" IOSTANDARD = LVCMOS33;
+NET "sram_dq<28>" IOSTANDARD = LVCMOS33;
+NET "sram_dq<27>" IOSTANDARD = LVCMOS33;
+NET "sram_dq<26>" IOSTANDARD = LVCMOS33;
+NET "sram_dq<25>" IOSTANDARD = LVCMOS33;
+NET "sram_dq<24>" IOSTANDARD = LVCMOS33;
+NET "sram_dq<23>" IOSTANDARD = LVCMOS33;
+NET "sram_dq<22>" IOSTANDARD = LVCMOS33;
+NET "sram_dq<21>" IOSTANDARD = LVCMOS33;
+NET "sram_dq<20>" IOSTANDARD = LVCMOS33;
+NET "sram_dq<19>" IOSTANDARD = LVCMOS33;
+NET "sram_dq<18>" IOSTANDARD = LVCMOS33;
+NET "sram_dq<17>" IOSTANDARD = LVCMOS33;
+NET "sram_dq<16>" IOSTANDARD = LVCMOS33;
+NET "sram_dq<15>" IOSTANDARD = LVCMOS33;
+NET "sram_dq<14>" IOSTANDARD = LVCMOS33;
+NET "sram_dq<13>" IOSTANDARD = LVCMOS33;
+NET "sram_dq<12>" IOSTANDARD = LVCMOS33;
+NET "sram_dq<11>" IOSTANDARD = LVCMOS33;
+NET "sram_dq<10>" IOSTANDARD = LVCMOS33;
+NET "sram_dq<9>" IOSTANDARD = LVCMOS33;
+NET "sram_dq<8>" IOSTANDARD = LVCMOS33;
+NET "sram_dq<7>" IOSTANDARD = LVCMOS33;
+NET "sram_dq<6>" IOSTANDARD = LVCMOS33;
+NET "sram_dq<5>" IOSTANDARD = LVCMOS33;
+NET "sram_dq<4>" IOSTANDARD = LVCMOS33;
+NET "sram_dq<3>" IOSTANDARD = LVCMOS33;
+NET "sram_dq<2>" IOSTANDARD = LVCMOS33;
+NET "sram_dq<1>" IOSTANDARD = LVCMOS33;
+NET "sram_dq<0>" IOSTANDARD = LVCMOS33;
+NET "sram_csn<0>" DRIVE = 8;
+NET "sram_csn<1>" DRIVE = 8;
+NET "sram_ben<1>" DRIVE = 8;
+NET "sram_ben<0>" DRIVE = 8;
+NET "sram_ben<3>" DRIVE = 8;
+NET "sram_ben<2>" DRIVE = 8;
+NET "sram_oen" DRIVE = 8;
+NET "sram_wen" DRIVE = 8;
+NET "sram_a<17>" DRIVE = 8;
+NET "sram_a<16>" DRIVE = 8;
+NET "sram_a<15>" DRIVE = 8;
+NET "sram_a<14>" DRIVE = 8;
+NET "sram_a<13>" DRIVE = 8;
+NET "sram_a<12>" DRIVE = 8;
+NET "sram_a<11>" DRIVE = 8;
+NET "sram_a<10>" DRIVE = 8;
+NET "sram_a<9>" DRIVE = 8;
+NET "sram_a<8>" DRIVE = 8;
+NET "sram_a<7>" DRIVE = 8;
+NET "sram_a<6>" DRIVE = 8;
+NET "sram_a<5>" DRIVE = 8;
+NET "sram_a<4>" DRIVE = 8;
+NET "sram_a<3>" DRIVE = 8;
+NET "sram_a<2>" DRIVE = 8;
+NET "sram_a<1>" DRIVE = 8;
+NET "sram_a<0>" DRIVE = 8;
+NET "sram_dq<31>" DRIVE = 8;
+NET "sram_dq<30>" DRIVE = 8;
+NET "sram_dq<29>" DRIVE = 8;
+NET "sram_dq<28>" DRIVE = 8;
+NET "sram_dq<27>" DRIVE = 8;
+NET "sram_dq<26>" DRIVE = 8;
+NET "sram_dq<25>" DRIVE = 8;
+NET "sram_dq<24>" DRIVE = 8;
+NET "sram_dq<23>" DRIVE = 8;
+NET "sram_dq<22>" DRIVE = 8;
+NET "sram_dq<21>" DRIVE = 8;
+NET "sram_dq<20>" DRIVE = 8;
+NET "sram_dq<19>" DRIVE = 8;
+NET "sram_dq<18>" DRIVE = 8;
+NET "sram_dq<17>" DRIVE = 8;
+NET "sram_dq<16>" DRIVE = 8;
+NET "sram_dq<15>" DRIVE = 8;
+NET "sram_dq<14>" DRIVE = 8;
+NET "sram_dq<13>" DRIVE = 8;
+NET "sram_dq<12>" DRIVE = 8;
+NET "sram_dq<11>" DRIVE = 8;
+NET "sram_dq<10>" DRIVE = 8;
+NET "sram_dq<9>" DRIVE = 8;
+NET "sram_dq<8>" DRIVE = 8;
+NET "sram_dq<7>" DRIVE = 8;
+NET "sram_dq<6>" DRIVE = 8;
+NET "sram_dq<5>" DRIVE = 8;
+NET "sram_dq<4>" DRIVE = 8;
+NET "sram_dq<3>" DRIVE = 8;
+NET "sram_dq<2>" DRIVE = 8;
+NET "sram_dq<1>" DRIVE = 8;
+NET "sram_dq<0>" DRIVE = 8;
+NET "sram_dq<31>" KEEPER;
+NET "sram_dq<30>" KEEPER;
+NET "sram_dq<29>" KEEPER;
+NET "sram_dq<28>" KEEPER;
+NET "sram_dq<27>" KEEPER;
+NET "sram_dq<26>" KEEPER;
+NET "sram_dq<25>" KEEPER;
+NET "sram_dq<24>" KEEPER;
+NET "sram_dq<23>" KEEPER;
+NET "sram_dq<22>" KEEPER;
+NET "sram_dq<21>" KEEPER;
+NET "sram_dq<20>" KEEPER;
+NET "sram_dq<19>" KEEPER;
+NET "sram_dq<18>" KEEPER;
+NET "sram_dq<17>" KEEPER;
+NET "sram_dq<16>" KEEPER;
+NET "sram_dq<15>" KEEPER;
+NET "sram_dq<14>" KEEPER;
+NET "sram_dq<13>" KEEPER;
+NET "sram_dq<12>" KEEPER;
+NET "sram_dq<11>" KEEPER;
+NET "sram_dq<10>" KEEPER;
+NET "sram_dq<9>" KEEPER;
+NET "sram_dq<8>" KEEPER;
+NET "sram_dq<7>" KEEPER;
+NET "sram_dq<6>" KEEPER;
+NET "sram_dq<5>" KEEPER;
+NET "sram_dq<4>" KEEPER;
+NET "sram_dq<3>" KEEPER;
+NET "sram_dq<2>" KEEPER;
+NET "sram_dq<1>" KEEPER;
+NET "sram_dq<0>" KEEPER;
+# video
+NET "vga_hsync" LOC = "R9";
+NET "vga_vsync" LOC = "T10";
+NET "vga_r" LOC = "R12";
+NET "vga_g" LOC = "T12";
+NET "vga_b" LOC = "R11";
+NET "vga_hsync" IOSTANDARD = LVCMOS33;
+NET "vga_vsync" IOSTANDARD = LVCMOS33;
+NET "vga_r" IOSTANDARD = LVCMOS33;
+NET "vga_g" IOSTANDARD = LVCMOS33;
+NET "vga_b" IOSTANDARD = LVCMOS33;
+NET "vga_hsync" DRIVE = 8;
+NET "vga_vsync" DRIVE = 8;
+NET "vga_r" DRIVE = 8;
+NET "vga_g" DRIVE = 8;
+NET "vga_b" DRIVE = 8;
+# PS/2
+NET "ps2_c" LOC = "M16";
+NET "ps2_d" LOC = "M15";
+NET "ps2_c" IOSTANDARD = LVCMOS33;
+NET "ps2_d" IOSTANDARD = LVCMOS33;
+# Flash
+NET "flash_clk" LOC = "A14";
+NET "flash_q" LOC = "M11";
+NET "flash_clk" IOSTANDARD = LVCMOS33;
+NET "flash_q" IOSTANDARD = LVCMOS33;
+# sound
+NET "sound" LOC = "D15";
+NET "sound" IOSTANDARD = LVCMOS33;
+NET "clk_osc" TNM_NET = "clk_osc";
+
+#TIMESPEC "TS_clk_osc" = PERIOD "clk_osc" 19 ns HIGH 50 %;

@@ -1,0 +1,224 @@
+###############################################
+# soft reset test
+###############################################
+W a7fe 80
+I 5
+R a7fe 00 ff
+I 5
+###############################################
+# slide window test
+###############################################
+# write and read back page index registers
+W a7fc 45
+W a7fd 9a
+R a7fc 45 ff
+R a7fd 9a ff
+# write page 0
+W a7fc 00
+W a7fd 00
+W a800 0f
+W a8ff f0
+# write page 1
+W a7fd 01
+W a800 1f
+W a8ff f1
+# write page 2
+W a7fd 02
+W a800 2f
+W a8ff f2
+# pwrite age 257
+W a7fc 01
+W a7fd 01
+W a800 9f
+W a8ff f9
+# read back page 0
+W a7fc 00
+W a7fd 00
+R a800 0f ff
+R a8ff f0 ff
+# read back page 1
+W a7fd 01
+R a800 1f ff
+R a8ff f1 ff
+# read back page 2
+W a7fd 02
+R a800 2f ff
+R a8ff f2 ff
+# read back page 257
+W a7fc 01
+W a7fd 01
+R a800 9f ff
+R a8ff f9 ff
+###############################################
+# bios code area test
+###############################################
+W a900 11
+W a901 22
+W a902 33
+W a903 44
+W affc cc
+W affd dd
+W affe ee
+W afff ff
+R a900 11 ff
+R a901 22 ff
+R a902 33 ff
+R a903 44 ff
+R affc cc ff
+R affd dd ff
+R affe ee ff
+R afff ff ff
+###############################################
+# rom code area test
+###############################################
+W c000 e1
+W c001 e2
+W c002 e3
+W c003 e4
+W fffc ec
+W fffd ed
+W fffe ee
+W ffff ef
+R c000 e1 ff 
+R c001 e2 ff 
+R c002 e3 ff 
+R c003 e4 ff 
+R fffc ec ff 
+R fffd ed ff 
+R fffe ee ff 
+R ffff ef ff 
+###############################################
+# user/bios ram test
+###############################################
+# setup user area
+W a7fe 00
+# write user ram
+W 2000 a2 
+W 3000 a3 
+W 4000 a4 
+W 5000 a5 
+W 6000 a6 
+W 7000 a7 
+W 8000 a8 
+W 9000 a9 
+W 9fff af 
+# setup bios area
+W a7fe 04
+# write bios ram
+W 2000 b2 
+W 3000 b3 
+W 4000 b4 
+W 5000 b5 
+W 6000 b6 
+W 7000 b7 
+W 8000 b8 
+W 9000 b9 
+W 9fff bf 
+# setup user area
+W a7fe 00
+# read back user ram
+R 2000 a2 ff
+R 3000 a3 ff
+R 4000 a4 ff
+R 5000 a5 ff
+R 6000 a6 ff
+R 7000 a7 ff
+R 8000 a8 ff
+R 9000 a9 ff
+R 9fff af ff
+# setup user area
+W a7fe 04
+# read back user ram
+R 2000 b2 ff
+R 3000 b3 ff
+R 4000 b4 ff
+R 5000 b5 ff
+R 6000 b6 ff
+R 7000 b7 ff
+R 8000 b8 ff
+R 9000 b9 ff
+R 9fff bf ff
+I 5
+###############################################
+# video ram test
+###############################################
+# write to user/foreground
+W a7fe 00
+W a7c0 00
+#
+W 0000 70
+W 0400 74
+W 0800 78
+W 1000 71
+W 1800 72
+W 1fff 73
+#
+W a7c0 01
+W 0000 80
+W 0400 84
+W 0800 88
+W 1000 81
+W 1800 82
+W 1fff 83
+#
+W a7fe 04
+W a7c0 00
+W 0000 50
+W 0400 54
+W 0800 58
+W 1000 51
+W 1800 52
+W 1fff 53
+#
+W a7c0 01
+W 0000 60
+W 0400 64
+W 0800 68
+W 1000 61
+W 1800 62
+W 1fff 63
+# read back from user/foreground
+W a7fe 00
+W a7c0 00
+#
+R 0000 70 ff
+R 0400 74 ff
+R 0800 78 ff
+R 1000 71 ff
+R 1800 72 ff
+R 1fff 73 ff
+#
+W a7c0 01
+R 0000 80 ff
+R 0400 84 ff
+R 0800 88 ff
+R 1000 81 ff
+R 1800 82 ff
+R 1fff 83 ff
+#         
+W a7fe 04
+W a7c0 00
+R 0000 50  ff
+R 0400 54  ff
+R 0800 58  ff
+R 1000 51  ff
+R 1800 52  ff
+R 1fff 53  ff
+#
+W a7c0 01
+R 0000 60  ff
+R 0400 64  ff
+R 0800 68  ff
+R 1000 61  ff
+R 1800 62  ff
+R 1fff 63  ff
+###############################################
+# IRQ vsync test
+###############################################
+# wait next nirq
+R a7c3 00 80
+I 130000
+R a7c3 80 80
+R a7c3 00 80
+I 10
+E

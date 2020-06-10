@@ -1,0 +1,40 @@
+/space/projects/mo5/jeux/5axe.k7
+Le 5eme axe
+/space/projects/mo5/jeux/aigledor.k7
+L'Aigle d'Or
+/space/projects/mo5/jeux/way_of_the_tiger.k7
+The Way of the Tiger
+/space/projects/mo5/jeux/sapiens.k7
+Sapiens
+/space/projects/mo5/jeux/stonezone.k7
+Stone Zone
+/space/projects/mo5/jeux/mandragore1-mo5.k7
+Mandragore 1/3
+/space/projects/mo5/jeux/mandragore2-mo5.k7
+Mandragore 2/3
+/space/projects/mo5/jeux/mandragore3-mo5.k7
+Mandragore 3/3
+/space/projects/mo5/jeux/temple_quauthli1.k7
+Le Temple de Quauthli 1/2
+/space/projects/mo5/jeux/temple_quauthli2.k7
+Le Temple de Quauthli 2/2
+/space/projects/mo5/jeux/sorcery.k7
+Sorcery
+/space/projects/mo5/jeux/3dfight.k7
+3D Fight
+/space/projects/mo5/jeux/beach_head.k7
+Beach Head
+/space/projects/mo5/jeux/runaway2.k7
+Run Away 2
+/space/projects/mo5/jeux/arkanoid.k7
+Arkanoid
+/space/projects/mo5/jeux/game_over.k7
+Game Over
+/space/projects/mo5/jeux/avenger.k7
+Avenger
+/space/projects/mo5/jeux/crocky.k7
+Crocky
+/space/projects/mo5/jeux/green_beret.k7
+Green Beret
+/space/projects/mo5/jeux/fox.k7
+Fox
